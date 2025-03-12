@@ -1,3 +1,7 @@
+import { Toaster } from "sonner";
+import { Suspense } from "react";
+import { ThemeProvider } from "next-themes";
+
 import "./globals.css";
 
 export default function RootLayout({
@@ -7,8 +11,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
+      <head />
+      <body suppressHydrationWarning>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Toaster />
+          <Suspense fallback={<div>Loading...</div>}>
+            {children}
+          </Suspense>
+        </ThemeProvider>
       </body>
     </html>
   );
