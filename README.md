@@ -86,9 +86,9 @@ Você pode filtrar as tarefas de acordo com o status. As opções de filtro são
 ### 5. Alterar Tema
 No canto superior direito, há um switch para alternar entre o tema claro e o tema escuro.
 
-### Escuro
-![user](./docs/TaskTelaLigth.png)
 ### Claro
+![user](./docs/TaskTelaLigth.png)
+### Escuro
 ![user](./docs/TaskTelaDark.png)
 
 
